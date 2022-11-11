@@ -8,8 +8,8 @@ namespace Singly_linked_list
 {
     class Node
     {
-        static void Main(string[] args)
-        {
-        }
+        public int dollNumber;
+        public string name;
+        public Node next;
     }
 }
