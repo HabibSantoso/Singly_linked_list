@@ -65,5 +65,27 @@ namespace Singly_linked_list
             previous.next = newnode;
 
         }
+
+        public void traverse()
+        {
+            if (ListEmpty())
+            {
+                Console.WriteLine("\nList is Empty");
+
+            }
+            else
+            {
+                Console.WriteLine("\nThe records in the list are : ");
+                Node currentNode;
+                for(currentNode = START; currentNode!= null;
+                    currentNode = currentNode.next)
+                {
+                    Console.Write(currentNode.rollNumber + " " + currentNode.name + "\n");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        
     }
 }
