@@ -143,6 +143,18 @@ namespace Singly_linked_list
         static void Main(string[] args)
         {
             List obj = new List();
+
+            while (true)
+            {
+                try
+                {
+
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("\nCheck for the value entered");
+                }
+            }
         }
     }
 }
