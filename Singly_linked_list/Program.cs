@@ -68,7 +68,7 @@ namespace Singly_linked_list
 
         public void traverse()
         {
-            if (ListEmpty())
+            if (listEmpty())
             {
                 Console.WriteLine("\nList is Empty");
 
@@ -123,6 +123,18 @@ namespace Singly_linked_list
                 return (true);
             }
             
+        }
+
+        public bool listEmpty()
+        {
+            if(START == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
