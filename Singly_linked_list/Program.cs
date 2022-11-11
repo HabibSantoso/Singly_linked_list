@@ -137,4 +137,12 @@ namespace Singly_linked_list
             }
         }
     }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List obj = new List();
+        }
+    }
 }
