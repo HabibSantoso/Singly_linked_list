@@ -165,7 +165,22 @@ namespace Singly_linked_list
                             break;
                         case '2':
                             {
-
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break;
+                                }
+                                Console.Write("\nEnter the roll number of the student whose record is to be delete :");
+                                int nim = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if(obj.delNode(nim) == false)
+                                {
+                                    Console.WriteLine("\nRecord not found.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Record with roll number " + nim + " Deleted");
+                                }
                             }
                             break;
                         case '3':
