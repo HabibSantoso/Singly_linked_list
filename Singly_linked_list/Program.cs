@@ -155,6 +155,37 @@ namespace Singly_linked_list
                     Console.WriteLine("4. Search for a record in the list");
                     Console.WriteLine("5. EXIT");
                     Console.Write("\nEnter your choice (1-5) : ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+
+                            }
+                            break;
+                        case '2':
+                            {
+
+                            }
+                            break;
+                        case '3':
+                            {
+
+                            }
+                            break;
+                        case '4':
+                            {
+
+                            }
+                            break;
+                        case '5':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("\nInvalid Option");
+                                break;
+                            }
+                    }
                 }
                 catch (Exception)
                 {
