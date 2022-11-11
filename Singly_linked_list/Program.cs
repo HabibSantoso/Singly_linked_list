@@ -102,5 +102,27 @@ namespace Singly_linked_list
             }
             return true;
         }
+
+        public bool Search(int nim, ref Node previous, ref Node current)
+        {
+            previous = START;
+            current = START;
+            
+            while ((current != null) && (nim != current.rollNumber))
+            {
+                previous = current;
+                current = current.next;
+
+            }
+            if (current == null)
+            {
+                return (false);
+            }
+            else
+            {
+                return (true);
+            }
+            
+        }
     }
 }
