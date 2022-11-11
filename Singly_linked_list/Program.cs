@@ -185,7 +185,7 @@ namespace Singly_linked_list
                             break;
                         case '3':
                             {
-
+                                obj.traverse();
                             }
                             break;
                         case '4':
