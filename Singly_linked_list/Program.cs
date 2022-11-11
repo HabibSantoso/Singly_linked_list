@@ -45,6 +45,25 @@ namespace Singly_linked_list
                 return;
             }
 
+            //
+            Node previous, current;
+            previous = START;
+            current = START;
+
+            while((current != null) && (nim >= current.rollNumber))
+            {
+                if (nim == current.rollNumber)
+                {
+                    Console.WriteLine("\nDuplicate roll number not allowed\n");
+                    return;
+                }
+                previous = current;
+                current = current.next;
+            }
+
+            newnode.next = current;
+            previous.next = newnode;
+
         }
     }
 }
