@@ -8,7 +8,7 @@ namespace Singly_linked_list
 {
     class Node
     {
-        public int dollNumber;
+        public int rollNumber;
         public string name;
         public Node next;
     }
@@ -29,7 +29,21 @@ namespace Singly_linked_list
             nim = Convert.ToInt32(Console.ReadLine());
             Console.Write("\nEnter the name of the student: ");
             nm = Console.ReadLine();
-            
+            Node newnode = new Node();
+            newnode.rollNumber = nim;
+            newnode.name = nm;
+            //untuk pengcekan apakah nimbisa di input ke awal list
+            if (START == null || nim <= START.rollNumber)
+            {
+                if((START != null) && (nim == START.rollNumber))
+                {
+                    Console.WriteLine("\nDuplicate roll number not allowed\n");
+                    return;
+                }
+                newnode.next = START;
+                START = newnode;
+                return;
+            }
 
         }
     }
