@@ -148,7 +148,13 @@ namespace Singly_linked_list
             {
                 try
                 {
-
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Add a record to the list");
+                    Console.WriteLine("2. Delete a record from the list");
+                    Console.WriteLine("3. view all the records in the list");
+                    Console.WriteLine("4. Search for a record in the list");
+                    Console.WriteLine("5. EXIT");
+                    Console.Write("\nEnter your choice (1-5) : ");
                 }
                 catch (Exception)
                 {
